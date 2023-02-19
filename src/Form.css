@@ -1,0 +1,170 @@
+/* Basic styling */
+.sky-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sky-form header {
+    font-size: 30px;
+    font-weight: 300;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Fieldset styling */
+.sky-form fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.sky-form fieldset:last-of-type {
+    margin-bottom: 0;
+}
+
+.sky-form fieldset .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.sky-form fieldset .col {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sky-form fieldset section {
+    margin-bottom: 20px;
+}
+
+.sky-form fieldset label.input {
+    display: block;
+    position: relative;
+}
+
+.sky-form fieldset label.input input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px 10px 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #8e8e8e;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.sky-form fieldset label.input i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8e8e8e;
+}
+
+.sky-form fieldset label.input b {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    background: #8e8e8e;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 6px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.sky-form fieldset label.input:hover b,
+.sky-form fieldset label.input:focus-within b {
+    opacity: 1;
+}
+
+.sky-form fieldset .checkbox {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    font-size: 16px;
+    color: #8e8e8e;
+}
+
+.sky-form fieldset .checkbox input[type="checkbox"] {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+/* Button styling */
+.sky-form button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background: #8e8e8e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sky-form button:hover,
+.sky-form button:focus {
+    background-color: #6d6d6d;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+    .sky-form {
+        padding: 20px 10px;
+    }
+
+    .sky-form header {
+        font-size: 24px;
+    }
+
+    .sky-form fieldset label.input input {
+        height: 32px;
+        padding: 8px 16px 8px 36px;
+        font-size: 14px;
+    }
+
+    .sky-form fieldset label.input i {
+        font-size: 16px;
+    }
+
+    .sky-form fieldset label.input b {
+        font-size: 12px;
+    }
+
+    .sky-form button {
+        height: 40px;
+        font-size: 16px;
+    }
+}
